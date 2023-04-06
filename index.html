@@ -1,0 +1,224 @@
+<html>
+    <head>
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <style>
+            #body {
+                max-width: 1920px;
+                height: 100%;
+                margin: 0 auto;
+            }
+
+            #main-img-container {
+                height: 100%;
+                margin: 0 auto;
+                position: relative;
+            }
+
+            #main-img-carpet {
+                width: 83%;
+                height: auto;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            #main-img-elems-container {
+                width: 57%;
+                height: 100%;
+                position: absolute;
+                bottom: 21px;
+                left: 50%;
+                transform: translateX(-50%);
+
+            }
+
+            .main-img-elems {
+                width: 100%;
+                height: auto;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+
+            #main-img-light {
+                width: 17%;
+                height: auto;
+                position: absolute;
+                right: 23%;
+                bottom: 29%;
+
+                opacity: 1.0;
+
+                animation-name: blink;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+                animation-duration: 5s;
+                animation-timing-function: ease-in-out;
+            }
+
+            #main-caption-container {
+                width: 20%;
+                height: fit-content;
+                position: absolute;
+                bottom: 47vh;
+                right: 10%;
+            }
+
+            #main-caption-frame-container {
+                width: 100%;
+                padding-bottom: 127%; 
+                position: relative;
+            }
+
+            #main-caption-frame {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            #main-caption-content-container {
+                width: 61%;
+                height: 71%;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                margin-left: 25%;
+                margin-top: 25%;
+                margin-bottom: 11%;
+
+                overflow-y: hidden;
+                box-sizing: border-box;
+            }
+
+            #main-caption-content {
+                animation-direction: normal;
+                animation-duration: 45s;
+                animation-name: slideup;
+            }
+
+            @keyframes blink {
+                0% {
+                    opacity: 0;
+                }
+
+                70% {
+                    opacity: 1.0;
+                }
+
+                100% {
+                    opacity: 1.0;
+                }   
+            }
+
+            @keyframes slideup {
+                from {
+                    margin-top: 200%;
+                }
+
+                to {
+                    margin-top: -500%;
+                }   
+            }
+            
+
+        </style>
+
+        <div id="body">
+
+            <div id="main-img-container">
+
+                <img 
+                    id="main-img-carpet"
+                    src="main_imgs/carpet.png" 
+                    alt="carpet"
+                >
+
+                <div id="main-img-elems-container">
+                    <img
+                        class="main-img-elems"
+                        src="main_imgs/couch.png" 
+                        alt="couch"
+                    >
+
+                    <img
+                        class="main-img-elems"
+                        src="main_imgs/table.png" 
+                        alt="table"
+                    >
+
+                    <img
+                        class="main-img-elems"
+                        src="main_imgs/lamp.png" 
+                        alt="lamp"
+                    >
+
+                    <img
+                        class="main-img-elems"
+                        src="main_imgs/postit.png" 
+                        alt="postit"
+                    >
+
+                    <img
+                        class="main-img-elems"
+                        src="main_imgs/mouse.png" 
+                        alt="mouse"
+                    >
+
+                    <img
+                        id="main-img-light"
+                        src="main_imgs/light.png" 
+                        alt="light"
+                    >
+                </div>
+                
+                <div id="main-caption-container">
+
+                    <div id="main-caption-frame-container">
+
+                        <img
+                            id="main-caption-frame" 
+                            src="main_imgs/caption_frame.png" 
+                            alt=""
+                        >
+
+                        <div id="main-caption-content-container">
+                            <p
+                                class="title-style-kr"
+                                id="main-caption-content"
+                            >
+                                띠로리소프트는 <br/>
+                                귀여움과 가여움이 느껴지는 <br/>
+                                캐릭터들을 <br/>
+                                기반으로 <br/>
+                                인형과 스티커 등의 <br/>
+                                다양한 굿즈들을 <br/>
+                                제작하고 <br/>
+                                있습니다.<br/>
+                                <br/>
+                                어딘가 엉성하고 <br/>
+                                재미있는 물건들로 당신에게 헛웃음과 사랑을 전합니다.<br/>
+                                <br/>
+                                TIRORISOFT makes <br/>
+                                various goods <br/>
+                                such as dolls and stickers with cute and heart-wrenching characters.<br/>
+                                <br/>
+                                We give you a laugh and love with <br/>
+                                some sloppy and funny products. <br/>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
