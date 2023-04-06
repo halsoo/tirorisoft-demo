@@ -1,0 +1,56 @@
+/* @font-face {
+    font-family: "Copyright Klim Type Foundry"; 
+    src: url("//db.onlinewebfonts.com/t/977c0265c928af7b940ae8e9598b4079.eot"); 
+    src: url("//db.onlinewebfonts.com/t/977c0265c928af7b940ae8e9598b4079.woff2") format("woff2");
+    font-weight: light;
+    font-style: light;
+} */
+@font-face {
+    font-family: "Copyright Klim Type Foundry"; 
+    src: url("//db.onlinewebfonts.com/t/977c0265c928af7b940ae8e9598b4079.eot"); 
+    src: url("//db.onlinewebfonts.com/t/977c0265c928af7b940ae8e9598b4079.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/977c0265c928af7b940ae8e9598b4079.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/977c0265c928af7b940ae8e9598b4079.woff") format("woff"), url("//db.onlinewebfonts.com/t/977c0265c928af7b940ae8e9598b4079.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/977c0265c928af7b940ae8e9598b4079.svg#Copyright Klim Type Foundry") format("svg"); 
+}
+@font-face {
+    font-family: 'ChosunGu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title-style-kr {
+    font: 26px "ChosunGu", sans-serif;
+    line-height: 32px;
+    letter-spacing: 0.1ex;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: greyscale;
+}
+.title-style-en {
+    font: 28px "Copyright Klim Type Foundry", sans-serif;
+    line-height: 32px;
+    letter-spacing: 0.05ex;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: greyscale;
+}
+.body-style-kr {
+    font: 20px "ChosunGu", sans-serif;
+    line-height: 25px;
+    letter-spacing: 0.1ex;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: greyscale;
+}
+.body-style-en {
+    font: 20px "Copyright Klim Type Foundry", sans-serif;
+    line-height: 25px;
+    letter-spacing: 0.05ex;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: greyscale;
+}
+
+body {
+    background-color: #D1F4FF;
+    margin: 0;
+}

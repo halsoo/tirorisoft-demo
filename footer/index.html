@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <link href="../index.css" rel="stylesheet">
+    </head>
+    <body>
+        <style>
+            body {
+                background-color: #D1F4FF;
+            }
+
+            #footer {
+                clear:both;
+                position:relative;
+                max-width: 1594px;
+                margin: 69.5px auto 86px;
+                vertical-align:top;
+                padding-top: 80.5px;
+                margin-top: 80px;
+                font-size: 11px;
+                line-height: 18px;
+                border-top: 1px solid #000;
+                text-transform: uppercase;
+            }
+
+            #footer ul, pre {
+                margin: 0;
+            }
+
+            #footer .footer {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #footer:after { content:""; display:block; clear:both; }
+            #footer .footer_cs {
+                float:left; min-width:18%; max-width:25%; margin-right:5%;}
+            #footer .shop_info {float:left;width:55%;}
+            #footer .footer_link {
+                text-align: left; 
+                width: 16%;
+            }
+
+            #footer .footer_link a {
+                color: #000;
+                text-decoration: none;
+            }
+
+            #footer .no-list-style {
+                list-style: none;
+            }
+
+            #footer .no-inline-start {
+                padding-inline-start: unset;
+            }
+
+            /* xans- */
+            /* .layout-footer {} */
+            .layout-footer .utilMenu { overflow:hidden; height:42px; border-bottom:1px solid #e8e8e8; line-height:43px; *zoom:1; }
+            .layout-footer .utilMenu li { float:left; padding:0 10px 0 10px; background:url("//img.echosting.cafe24.com/skin/base/common/ico_bar2.gif") no-repeat 0 15px; }
+            .layout-footer .utilMenu li.home { padding-left:0; background:none; }
+            .layout-footer .utilMenu li a { color:#2e2e2e; }
+            .layout-footer .address { padding:13px 0 0; color:#757575; line-height:18px; }
+            .layout-footer .address span { padding:0 25px 0 0; }
+            .layout-footer .address span a { color:#757575; }
+            .layout-footer .copyright { position:absolute; left:204px; bottom:0; height:32px; color:#ededed; font-size:11px; line-height:32px; }
+            .layout-footer .pageTop { position:absolute; right:0; top:10px; }
+            .layout-footer .hosting { position:absolute; right:0; top:77px; }
+            
+            /* .xans- */
+            .layout-info { margin:0 0 20px; padding:0 0 17px; border-bottom:1px solid #e8e8e8; }
+            .layout-info h2 { height:24px; color:#2e2e2e; font-size:12px; }
+            .layout-info ul { padding:0 9px; }
+            .layout-info li { margin:4px 0 0; padding:0 0 0 9px; color:#494949; background:url("//img.echosting.cafe24.com/skin/base/common/ico_arrow.png") no-repeat 1px 4px; }
+            .layout-info li strong { display:inline-block; width:36px; color:#949494; font-weight:normal; }
+            .layout-info li.tel { margin:0 0 10px; padding:0; color:#495164; font-size:26px; background:none; }
+            .layout-info li.tel strong { visibility:hidden; overflow:hidden; width:0; height:0; font-size:0; line-height:0; }
+
+        </style>
+
+        <div id="footer">
+            <div class="footer layout-footer" module="Layout_footer">
+                <ul class="footer_cs no-list-style no-inline-start layout_info" module="Layout_Info">
+                    <li>
+                        <pre class="body-style-en">{$runtime}</pre>
+                    </li>
+                </ul>
+
+                <ul class="shop_info no-list-style no-inline-start" > 
+                    <span class="body-style-en">COMPANY : </span>
+                    <span class="body-style-kr">{$company_name}</span>
+                    <span class="body-style-en">. CEO . CPO : </span>
+                    <span class="body-style-kr">{$president_name}</span><br/>
+                    <span class="body-style-en">ADDRESS : </span>
+                    <span class="body-style-kr">{$mall_zipcode} {$mall_addr1} {$mall_addr2}</span><br />
+                    <span class="body-style-en">BUSINESS LICENSE : </span>
+                    <span class="body-style-kr">{$company_regno}</span><br />
+                    <span class="body-style-en">ONLINE BUSINESS LICENSE : </span>
+                    <span class="body-style-kr">{$network_regno}</span><br />
+                    <br />
+                    <span class="body-style-en">COPYRIGHT (C) </span>
+                    <span class="body-style-kr">{$company_name}</span>
+                </ul>
+
+                <ul class="footer_link no-list-style no-inline-start body-style-en">
+                    <li><a href="/member/agreement.html">AGREEMENT</a></li> 
+                    <li><a href="/shopinfo/guide.html">GUIDE</a></li> 
+                    <li><a href="/member/privacy.html">PRIVACY</a></li>
+                    <br/>
+                    <li><a href="https://instagram.com" target="_blank">INSTAGRAM</a></li>
+                    <li><a href="https://twitter.com" target="_blank">TWITTER</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </body>
+</html>
