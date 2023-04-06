@@ -99,9 +99,11 @@
             }
 
             #main-caption-content {
+                animation-name: slideup;
                 animation-direction: normal;
                 animation-duration: 45s;
-                animation-name: slideup;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
             }
 
             @keyframes blink {
@@ -120,11 +122,11 @@
 
             @keyframes slideup {
                 from {
-                    margin-top: 200%;
+                    margin-top: 150%;
                 }
 
                 to {
-                    margin-top: -500%;
+                    margin-top: -550%;
                 }   
             }
             
@@ -190,29 +192,19 @@
                         >
 
                         <div id="main-caption-content-container">
-                            <p
-                                class="title-style-kr"
-                                id="main-caption-content"
-                            >
-                                띠로리소프트는 <br/>
-                                귀여움과 가여움이 느껴지는 <br/>
-                                캐릭터들을 <br/>
-                                기반으로 <br/>
-                                인형과 스티커 등의 <br/>
-                                다양한 굿즈들을 <br/>
-                                제작하고 <br/>
-                                있습니다.<br/>
-                                <br/>
-                                어딘가 엉성하고 <br/>
-                                재미있는 물건들로 당신에게 헛웃음과 사랑을 전합니다.<br/>
-                                <br/>
-                                TIRORISOFT makes <br/>
-                                various goods <br/>
-                                such as dolls and stickers with cute and heart-wrenching characters.<br/>
-                                <br/>
-                                We give you a laugh and love with <br/>
-                                some sloppy and funny products. <br/>
-                            </p>
+                            <div id="main-caption-content">
+                                <img
+                                    src="main_imgs/caption_kr.png"
+                                    width="100%"
+                                    height="auto"
+                                >
+                                <img
+                                    src="main_imgs/caption_en.png"
+                                    width="100%"
+                                    height="auto"
+                                    style="margin-top: 57px;"
+                                >
+                            </div>
                         </div>
 
                     </div>
